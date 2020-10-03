@@ -76,3 +76,26 @@ function alignText(elem, alignType) {
   }
   elem.classList.add("active");
 }
+
+function clear() {
+  // document.getElementById("text-input").value = "";
+  // document.getElementById("text-output").value = "";
+
+  document.getElementById("wipeOut").addEventListener("click", function () {
+    document.getElementById("text-input").value = "";
+    document.getElementById("text-output").innerText = "";
+    warning();
+  });
+}
+
+function warning() {
+  setTimeout(function () {
+    document.getElementsByClassName("alert")[0].style.display = "block";
+  }, 600);
+
+  setTimeout(function () {
+    document.getElementsByClassName("alert")[0].style.display = "none";
+  }, 5000);
+}
+
+clear();

@@ -72,6 +72,9 @@
         </div>
       </div>
       <hr />
+      <div class="alert alert-primary" role="alert">
+        Text has been cleared!!!
+      </div>
       <div class="row editor">
         <div class="col">
           <div class="form-group">
@@ -79,7 +82,7 @@
             <textarea
               class="form-control"
               id="text-input"
-              onkeyup="updateText()"
+              oninput="updateText()"
               rows="3"
             ></textarea>
           </div>
@@ -90,6 +93,13 @@
         </div>
       </div>
     </main>
+    <button
+      type="button"
+      id="wipeOut"
+      class="btn btn-outline-info btn-lg btn-block"
+    >
+      Click
+    </button>
     <script src="script.js"></script>
   </body>
 </html>

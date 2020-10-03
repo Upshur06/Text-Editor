@@ -46,3 +46,7 @@ label {
 button {
   margin-left: 20px;
 }
+
+.alert {
+  display: none;
+}
